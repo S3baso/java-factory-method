@@ -1,7 +1,7 @@
 package cakes;
 
-public class MediumCofeeCake extends CoffeeCake {
-    public MediumCofeeCake() {
+public class MediumCoffeeCake extends CoffeeCake {
+    public MediumCoffeeCake() {
         this.name = "Medium Coffee Cake";
         this.price = 27.00;
     }
