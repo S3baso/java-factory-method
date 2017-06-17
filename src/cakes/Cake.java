@@ -27,6 +27,6 @@ public abstract class Cake {
     @Override
     public String toString()
     {
-        return this.name + " (wielkość: " + this.size + ") " + this.ingredients + " - " + this.price + " PLN";
+        return this.size + " " + this.name + " " + this.ingredients + " - " + this.price + " PLN";
     }
 }
