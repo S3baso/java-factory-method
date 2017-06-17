@@ -1,9 +1,32 @@
 package cakes;
 
 import java.util.ArrayList;
+import ingredients.Ingredient;
 
 public abstract class Cake {
-    public String name;
-    public ArrayList<String> components = new ArrayList<String>();
-    public Double price;
+    protected String name;
+    protected ArrayList<Ingredient> ingredients = new ArrayList<Ingredient>();
+    protected Double price;
+    protected CakeSize size;
+
+    public String getName()
+    {
+        return this.name;
+    }
+
+    public Double getPrice()
+    {
+        return this.price;
+    }
+
+    public CakeSize getSize()
+    {
+        return this.size;
+    }
+
+    @Override
+    public String toString()
+    {
+        return this.name + " (wielkość: " + this.size + ") " + this.ingredients + " - " + this.price + " PLN";
+    }
 }

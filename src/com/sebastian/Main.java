@@ -1,17 +1,13 @@
 package com.sebastian;
 
-import cakes.BigChocolateCake;
-import cakes.Cake;
 import cakes.factories.CakeFactory;
+import cakes.CakeSize;
+import cakes.CakeType;
+import cakes.Cake;
 
 public class Main {
     public static void main(String[] args) {
-        try {
-            Cake test = CakeFactory.create("big", "coffee");
-            System.out.println(test.name);
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
-
+        Order order = new Order(CakeType.CHOCOLATE, CakeSize.BIG, 3);
+        order.summary();
     }
 }
